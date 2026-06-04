@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Toy — Главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">
+      <img src="img/logo.png" alt="ECO TOY">
+    </div>
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="#">О нас</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="#">Отзывы</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <div class="cart">🛒</div>
+  </div>
+</header>
+
+<section class="hero container">
+  <div class="hero-text">
+    <h2>НОВИНКА</h2>
+    <p>Набор<br>"Лесные зверушки"</p>
+    <div class="price">
+      <span class="new">1890 ₽</span>
+      <span class="old">2100 ₽</span>
+    </div>
+    <a href="catalog.html" class="btn">В каталог</a>
+  </div>
+  <img src="img/hero.png" alt="">
+</section>
+
+<section class="why container">
+  <h2>ПОЧЕМУ ИМЕННО МЫ?</h2>
+
+  <div class="why-grid">
+    <div class="card">Натуральные материалы</div>
+    <div class="card">Сертифицированная продукция</div>
+    <div class="card">Лучшее соотношение цена/качество</div>
+  </div>
+</section>
+
+<section class="products container">
+  <div class="product">
+    <img src="img/p1.png">
+    <p>Грызунок "Лось"</p>
+    <span>360 ₽</span>
+  </div>
+
+  <div class="product">
+    <img src="img/p2.png">
+    <p>Грызунок "Конек"</p>
+    <span>580 ₽</span>
+  </div>
+
+  <div class="product">
+    <img src="img/p3.png">
+    <p>Погремушка "Белочка"</p>
+    <span>530 ₽</span>
+  </div>
+</section>
+
+<section class="reviews container">
+  <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+  <div class="reviews-wrapper">
+    <div class="reviews-slider">
+      <div class="review-image">
+        <img src="img/review1.png" alt="Фото игрушки" class="main-review-img">
+      </div>
+      <div class="review-cards">
+        <div class="review-card active">
+          <div class="review-card-header">
+            <h3>Артем</h3>
+            <span class="review-date">28 ноября, 2023 г</span>
+          </div>
+          <p>Качественно сделано! Натуральное дерево, приятно трогать руками. Покупал в подарок, в комплекте все детали. Выглядит очень красиво в жизни. Ребенку игрушка очень понравилась!</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card-header">
+            <h3>Наталия</h3>
+            <span class="review-date">14 мая, 2023 г</span>
+          </div>
+          <p>Очень классный набор! Дарила племяшке, она в восторге! Качество на высоте, нет посторонних запахов, каждое изделие сложено в индивидуальный пакетик. В общем довольны все, даже взрослые!</p>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active" onclick="changeReview(0)"></span>
+      <span class="dot" onclick="changeReview(1)"></span>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="container">
+    <div class="form-wrapper">
+      <h2>ХОТИТЕ ПОРАДОВАТЬ СВОЕГО РЕБЕНКА?</h2>
+      <p class="form-subtitle">Оставьте заявку и получите скидку 10% на первый заказ</p>
+      <form class="form">
+        <input type="text" placeholder="Ваше имя">
+        <input type="email" placeholder="E-mail">
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="ECO TOY">
+        </div>
+        <p class="footer-desc">ИП Трубачева Е.А.</p>
+        <p class="footer-desc">ИНН 240900845883</p>
+        <p class="footer-desc">ОГРНИП 318246800010404</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul class="footer-contacts">
+          <li>📍 660062, г. Красноярск,<br>ул. Высотная, д. 4 стр. 2</li>
+          <li>📞 +7(953) 588-91-96</li>
+          <li>✉️ info@ecofamilytoys.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Меню</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ECO TOY. Все права защищены.</p>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let currentReview = 0;
+  const totalReviews = 2;
+  const images = ['img/review1.png', 'img/review2.png'];
+
+  function changeReview(index) {
+    currentReview = index;
+    updateReview();
+  }
+
+  function updateReview() {
+    document.querySelectorAll('.review-card').forEach((card, i) => {
+      card.classList.toggle('active', i === currentReview);
+    });
+    document.querySelectorAll('.dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentReview);
+    });
+    document.querySelector('.main-review-img').src = images[currentReview];
+  }
+
+  setInterval(() => {
+    currentReview = (currentReview + 1) % totalReviews;
+    updateReview();
+  }, 5000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Погремушка "Белочка" — Eco Toy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">
+      <img src="img/logo.png" alt="ECO TOY">
+    </div>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="#">О нас</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="#">Отзывы</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <div class="cart">🛒</div>
+  </div>
+</header>
+
+<section class="product-page container">
+  <div class="product-gallery">
+    <div class="product-main-image">
+      <img src="img/p3.png" alt="Погремушка Белочка" id="mainImage">
+    </div>
+    <div class="product-thumbnails">
+      <img src="img/p3.png" alt="Фото 1" class="thumb active" onclick="switchImage('img/p3.png', this)">
+      <img src="img/p1.png" alt="Фото 2" class="thumb" onclick="switchImage('img/p1.png', this)">
+      <img src="img/p2.png" alt="Фото 3" class="thumb" onclick="switchImage('img/p2.png', this)">
+      <img src="img/hero.png" alt="Фото 4" class="thumb" onclick="switchImage('img/hero.png', this)">
+    </div>
+  </div>
+
+  <div class="product-details">
+    <h2>Погремушка "Белочка"</h2>
+
+    <div class="product-rating">
+      <div class="stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <span class="rating-text">4.9 / 5 (32 отзыва)</span>
+    </div>
+
+    <div class="product-prices product-prices-big">
+      <span class="product-price-new">530 ₽</span>
+    </div>
+
+    <p class="product-description">
+      Погремушка "Белочка" — яркая и безопасная игрушка для малышей. Изготовлена из натурального дерева с использованием безопасных красителей. Мягкий, приятный звук развивает слух, а форма удобна для захвата маленькими пальчиками.
+    </p>
+
+    <div class="product-specs">
+      <h3>Характеристики</h3>
+      <ul>
+        <li><strong>Материал:</strong> дерево (липа), акриловые краски</li>
+        <li><strong>Покрытие:</strong> безопасный лак на водной основе</li>
+        <li><strong>Размер:</strong> 7 × 7 × 3 см</li>
+        <li><strong>Вес:</strong> 50 г</li>
+        <li><strong>Возраст:</strong> от 0 месяцев</li>
+        <li><strong>Уход:</strong> протирать влажной тканью</li>
+        <li><strong>Страна:</strong> Россия</li>
+      </ul>
+    </div>
+
+    <div class="product-actions">
+      <button class="btn-big">Добавить в корзину</button>
+      <button class="btn-outline">Купить в один клик</button>
+    </div>
+  </div>
+</section>
+
+<section class="recommended container">
+  <h2>РЕКОМЕНДУЕМ ТАКЖЕ</h2>
+  <div class="recommended-grid">
+    <div class="product-card">
+      <a href="product-los.html" class="product-card-link">
+        <div class="product-card-img">
+          <img src="img/p1.png" alt="Грызунок Лось">
+        </div>
+        <div class="product-card-info">
+          <h3>Грызунок "Лось"</h3>
+          <p class="product-desc">Натуральное дерево, безопасное покрытие</p>
+          <div class="product-bottom">
+            <div class="product-prices">
+              <span class="product-price-new">360 ₽</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="product-konek.html" class="product-card-link">
+        <div class="product-card-img">
+          <img src="img/p2.png" alt="Грызунок Конек">
+          <span class="badge">-15%</span>
+        </div>
+        <div class="product-card-info">
+          <h3>Грызунок "Конек"</h3>
+          <p class="product-desc">Ручная работа, приятная текстура</p>
+          <div class="product-bottom">
+            <div class="product-prices">
+              <span class="product-price-new">493 ₽</span>
+              <span class="product-price-old">580 ₽</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="product-mishka.html" class="product-card-link">
+        <div class="product-card-img">
+          <img src="img/p1.png" alt="Грызунок Мишка">
+        </div>
+        <div class="product-card-info">
+          <h3>Грызунок "Мишка"</h3>
+          <p class="product-desc">Экологичный материал, гладкая поверхность</p>
+          <div class="product-bottom">
+            <div class="product-prices">
+              <span class="product-price-new">420 ₽</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <a href="product-lisichka.html" class="product-card-link">
+        <div class="product-card-img">
+          <img src="img/p3.png" alt="Погремушка Лисичка">
+        </div>
+        <div class="product-card-info">
+          <h3>Погремушка "Лисичка"</h3>
+          <p class="product-desc">Яркая, развивает моторику и слух</p>
+          <div class="product-bottom">
+            <div class="product-prices">
+              <span class="product-price-new">550 ₽</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-logo-col">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="ECO TOY">
+        </div>
+        <p class="footer-desc">ИП Трубачева Е.А.</p>
+        <p class="footer-desc">ИНН 240900845883</p>
+        <p class="footer-desc">ОГРНИП 318246800010404</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul class="footer-contacts">
+          <li>📍 660062, г. Красноярск,<br>ул. Высотная, д. 4 стр. 2</li>
+          <li>📞 +7(953) 588-91-96</li>
+          <li>✉️ info@ecofamilytoys.com</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Меню</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 ECO TOY. Все права защищены.</p>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function switchImage(src, el) {
+    document.getElementById('mainImage').src = src;
+    document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
